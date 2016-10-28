@@ -62,11 +62,11 @@ public class ExpandViewActivity extends BaseActivity {
         private List<PersonInfo> fansList;
 
         public void setGiftsList(List<PersonInfo> giftsList) {
-            giftsList = giftsList;
+            this.giftsList = giftsList;
         }
 
         public void setFollowList(List<PersonInfo> followList) {
-            followList = followList;
+            this.followList = followList;
         }
 
         public void setFansList(List<PersonInfo> fansList) {
