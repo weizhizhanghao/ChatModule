@@ -16,7 +16,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".BaseActivity" />
-        <activity android:name=".ExpandViewActivity"></activity>
+        <activity android:name=".ExpandViewActivity" />
+        <activity android:name=".CoordinatorLayoutActivity" />
+        <activity android:name=".CoordinatorLayoutActivity2"></activity>
     </application>
 
 </manifest>

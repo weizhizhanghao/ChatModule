@@ -45,7 +45,7 @@ public class MainActivity extends BaseActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent = new Intent(MainActivity.this, ExpandViewActivity.class);
+                Intent intent = new Intent(MainActivity.this, CoordinatorLayoutActivity.class);
                 startActivity(intent);
             }
         });
