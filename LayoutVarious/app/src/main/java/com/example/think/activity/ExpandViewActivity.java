@@ -1,4 +1,4 @@
-package com.example.think.layoutvarious;
+package com.example.think.activity;
 
 import android.view.View;
 import android.widget.ExpandableListView;

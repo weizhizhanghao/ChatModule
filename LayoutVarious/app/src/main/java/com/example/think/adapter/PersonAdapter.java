@@ -8,7 +8,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.think.data.Person;
-import com.example.think.layoutvarious.R;
+import com.example.think.activity.R;
 
 import java.util.List;
 

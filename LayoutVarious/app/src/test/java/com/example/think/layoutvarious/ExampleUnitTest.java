@@ -1,4 +1,4 @@
-package com.example.think.layoutvarious;
+package com.example.think.activity;
 
 import org.junit.Test;
 

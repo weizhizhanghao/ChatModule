@@ -14,7 +14,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
-import com.example.think.layoutvarious.R;
+import com.example.think.activity.R;
 
 /**
  * Created by HuangMei on 2016/10/26.

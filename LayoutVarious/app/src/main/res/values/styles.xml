@@ -14,4 +14,15 @@
         <item name="android:background">#dbdbdb</item>
     </style>
 
+    <!--&lt;!&ndash; res/values-v19/styles.xml &ndash;&gt;-->
+    <!--<style name="AppTheme1" parent="Base.AppTheme">-->
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
+    <!--</style>-->
+
+    <!--&lt;!&ndash; res/values-v21/styles.xml &ndash;&gt;-->
+    <!--<style name="AppTheme2" parent="Base.AppTheme">-->
+        <!--<item name="android:windowDrawsSystemBarBackgrounds">true</item>-->
+        <!--<item name="android:statusBarColor">@android:color/transparent</item>-->
+    <!--</style>-->
+
 </resources>

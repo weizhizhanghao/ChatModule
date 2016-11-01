@@ -1,12 +1,14 @@
-package com.example.think.layoutvarious;
+package com.example.think.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.view.WindowManager;
 
 import com.example.think.adapter.PersonAdapter;
 import com.example.think.data.Person;
@@ -26,10 +28,14 @@ public class CoordinatorLayoutActivity extends AppCompatActivity implements Pers
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_coordinator_layout);
-
         initData();
 
+        CollapsingToolbarLayout collapsingToolbar =
+                (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
+        collapsingToolbar.setTitle("Title");
 
         recyclerView = (RecyclerView) findViewById(R.id.rvToDoList);
 

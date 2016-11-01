@@ -1,4 +1,4 @@
-package com.example.think.layoutvarious;
+package com.example.think.activity;
 
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
@@ -8,10 +8,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ArrayAdapter;
-import android.widget.ListView;
+
+import com.example.think.view.NoScrollListView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,13 +29,16 @@ public class CoordinatorLayoutActivity2 extends AppCompatActivity {
     private List<String> mTitleList = new ArrayList<>();//页卡标题集合
     PagerAdapter mPagerAdapter;
 
-    private ListView listView;
+    private NoScrollListView listView;
     private List<String> mDatas;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-       // this.requestWindowFeature(Window.FEATURE_NO_TITLE);
+       // this.requestWindowFeature(Window.FEATURE_NO_TITLE);getSupportActionBar().hide();
+        getSupportActionBar().hide();
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         setContentView(R.layout.activity_coordinator_layout2);
        // this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
              //   WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -43,14 +46,11 @@ public class CoordinatorLayoutActivity2 extends AppCompatActivity {
         initViewPager();
         initListView();
 
-//        CollapsingToolbarLayout collapsingToolbar =
-//                (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
-//        collapsingToolbar.setTitle("Title");
     }
 
     void initListView(){
 
-        listView = (ListView)view1.findViewById(R.id.list_view);
+        listView = (NoScrollListView)view1.findViewById(R.id.list_view);
         mDatas = new ArrayList<>();
         for(int i = 1; i <= 50 ; i++) {
             mDatas.add("AndroidGet " + i + " ac " + " 2015-11-11 "+" 1884896 "+ i+ i + i);

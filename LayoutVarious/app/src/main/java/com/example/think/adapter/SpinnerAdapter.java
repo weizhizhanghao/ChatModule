@@ -9,7 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.think.data.PersonInfo;
-import com.example.think.layoutvarious.R;
+import com.example.think.activity.R;
 import com.example.think.util.VariousUtils;
 
 /**
